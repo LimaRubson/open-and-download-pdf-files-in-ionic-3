@@ -7,8 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <h6>Downloads de arquivos PDFs</h6>
+
+  <button ion-button (click)="openWithSystemBrowser('http://www.scielo.org/local/File/livro.pdf')">Open with System browser</button>
+  <button ion-button (click)="openWithInAppBrowser('http://www.scielo.org/local/File/livro.pdf')">Open with In App browser</button>
+  <button ion-button (click)="openWithCordovaBrowser('http://www.scielo.org/local/File/livro.pdf')">Open with Cordova browser</button>
+
 </ion-content>
